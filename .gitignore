@@ -1,8 +1,19 @@
-# Packages
+# ignore all files starting with .
+.*
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+
+/# Packages
 /node_modules/
 
 # Website build directory
 /dist/
 
-# OS Files
+# ignore OS generated files
 .DS_Store
+.DS_Store?
+.Trashes
+ehthumbs.db
+Thumbs.db
+
