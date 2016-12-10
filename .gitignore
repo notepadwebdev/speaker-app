@@ -1,0 +1,8 @@
+# Packages
+/node_modules/
+
+# Website build directory
+/dist/
+
+# OS Files
+.DS_Store

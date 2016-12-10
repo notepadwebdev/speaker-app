@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#" class="no-js is-loading">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>The Interactive Speaker | Interactive Audio Visualisation with the Web Audio API</title>
+        <meta name="description" content="Interactive Audio Visualisation with the Web Audio API. An interactive speaker created with CSS. Play audio by draggig around the screen. Speaker animations are driven by frequencies in the audio as it plays.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" href="img/favicon.ico?v=2" sizes="16x16" type="image/vnd.microsoft.icon" />
+
+        <link rel="stylesheet" href="css/screen.css">
+    </head>
+
+    <body class="show-title-screen">
+        <div id="container">
+
+			<div class="cursor"></div>
+
+			<div class="speaker">
+
+				<!-- Tweeters -->
+				<ul class="tweeters">
+					<li class="tweeter">
+						<div class="cone tweeter__cone">
+							<div class="tweeter__cone-outer"></div>
+							<div class="tweeter__cone-mid"></div>
+							<div class="tweeter__cone-inner"></div>
+							<div class="tweeter__cone-inner-shadow"></div>
+						</div>
+						<div class="dust-cap tweeter__dust-cap"></div>
+						<div class="frame tweeter__frame"></div>
+					</li>
+
+					<li class="tweeter">
+						<div class="cone tweeter__cone">
+							<div class="tweeter__cone-outer"></div>
+							<div class="tweeter__cone-mid"></div>
+							<div class="tweeter__cone-inner"></div>
+							<div class="tweeter__cone-inner-shadow"></div>
+						</div>
+						<div class="dust-cap tweeter__dust-cap"></div>
+						<div class="frame tweeter__frame"></div>
+					</li>
+				</ul>
+
+				<!-- Woofers -->
+				<ul class="woofers">
+					<li class="woofer">
+						<div class="cone woofer__cone">
+							<div class="woofer__cone-outer"></div>
+							<div class="woofer__cone-mid"></div>
+							<div class="woofer__cone-inner"></div>
+						</div>
+						<div class="dust-cap woofer__dust-cap"></div>
+						<div class="frame woofer__frame"></div>
+						<ul class="screws">
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+						</ul>
+					</li>
+
+					<li class="woofer">
+						<div class="cone woofer__cone">
+							<div class="woofer__cone-outer"></div>
+							<div class="woofer__cone-mid"></div>
+							<div class="woofer__cone-inner"></div>
+						</div>
+						<div class="dust-cap woofer__dust-cap"></div>
+						<div class="frame woofer__frame"></div>
+						<ul class="screws">
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+						</ul>
+					</li>
+
+					<li class="woofer">
+						<div class="cone woofer__cone">
+							<div class="woofer__cone-outer"></div>
+							<div class="woofer__cone-mid"></div>
+							<div class="woofer__cone-inner"></div>
+						</div>
+						<div class="dust-cap woofer__dust-cap"></div>
+						<div class="frame woofer__frame"></div>
+						<ul class="screws">
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+						</ul>
+					</li>
+
+					<li class="woofer">
+						<div class="cone woofer__cone">
+							<div class="woofer__cone-outer"></div>
+							<div class="woofer__cone-mid"></div>
+							<div class="woofer__cone-inner"></div>
+						</div>
+						<div class="dust-cap woofer__dust-cap"></div>
+						<div class="frame woofer__frame"></div>
+						<ul class="screws">
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+						</ul>
+					</li>
+
+					<li class="woofer">
+						<div class="cone woofer__cone">
+							<div class="woofer__cone-outer"></div>
+							<div class="woofer__cone-mid"></div>
+							<div class="woofer__cone-inner"></div>
+						</div>
+						<div class="dust-cap woofer__dust-cap"></div>
+						<ul class="screws">
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+							<li class="screw woofer__screw"></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+        </div>
+
+        <script src="js/vendor/modernizr.js"></script>
+        <script src="js/vendor/Pizzicato.js"></script>
+        <script src="js/bundle.js"></script>
+    </body>
+</html>

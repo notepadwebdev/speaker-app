@@ -1,0 +1,32 @@
+
+.cursor {
+	width: 4vh;
+	height: 4vh;
+	margin: -4vh 0 0 -2vh;
+	pointer-events: none;
+	position: absolute;
+	z-index: 99;
+
+	&:before {
+		content: "";
+		@include abs-tl;
+		border-radius: 50%;
+		opacity: .2;
+		background: rgba(0,0,0,0.8);
+		transform: scale(1.4);
+		transition: 1s cubic-bezier(.6,.4,0,1);
+
+		.mouse-pause & {
+			transform: scale(1);
+		}
+
+		.mouse-down & {
+			background: rgba(255,255,255,0.8);
+			transform: scale(1.8);
+		}
+	}
+
+	.mouse-down & {
+		padding: 1vh;
+	}
+}

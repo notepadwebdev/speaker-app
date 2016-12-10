@@ -1,0 +1,50 @@
+{
+  "name": "speaker-app",
+  "version": "1.0.0",
+  "description": "Interactive Web Audio API audio visualisation CSS speaker",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notepadwebdev/speaker-app.git"
+  },
+  "keywords": [
+    "Web Audio API",
+    "audio visualisation",
+    "CSS",
+    "speaker"
+  ],
+  "author": "notepadwebdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notepadwebdev/speaker-app/issues"
+  },
+  "homepage": "https://github.com/notepadwebdev/speaker-app#readme",
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "grunt-browserify": "^5.0.0",
+    "connect-livereload": "^0.5.4",
+    "express": "<4.0.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-express-server": "^0.4.19",
+    "grunt-modernizr": "^1.0.2",
+    "grunt-open": "^0.2.3",
+    "grunt-postcss": "latest",
+    "load-grunt-tasks": "^3.5.2",
+    "morgan": "^1.7.0"
+  },
+  "dependencies": {
+    "gsap": "^1.19.0",
+    "jquery": "^3.1.1",
+    "modernizr": "^3.3.1"
+  }
+}

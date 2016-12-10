@@ -1,0 +1,11 @@
+
+.warning {
+	display: none;
+	padding: 1em;
+	background: red;
+	color: white;
+
+	.unsupported-browser & {
+		display: block;
+	}
+}

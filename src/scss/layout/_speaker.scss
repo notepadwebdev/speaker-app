@@ -1,0 +1,101 @@
+
+.speaker {
+	padding: 3vh;
+	@include flex-center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.tweeters,
+.woofers {
+	width: 100%;
+	@include flex-center;
+	justify-content: space-around;
+
+	@media (orientation: portrait) {
+		flex-direction: column;
+	}
+}
+
+// ULs
+.tweeters {
+	height: 30vh;
+}
+.woofers {
+	height: 64vh;
+}
+
+// LIs
+.tweeter {
+	@media (orientation: portrait) {
+		width: 30vw;
+		height: 30vw;
+	}
+	@media (orientation: landscape) {
+		width: 30vh;
+		height: 30vh;
+	}
+}
+.woofer {
+	@media (orientation: portrait) {
+		width: 55vw;
+		height: 55vw;
+	}
+	@media (orientation: landscape) {
+		width: 55vh;
+		height: 55vh;
+	}
+}
+
+
+.tweeter {
+	// Hide all tweeters by default
+	@include flex-center;
+	display: none;
+
+	// show 1 tweeter
+	&:nth-child(1) {
+		display: flex;
+	}
+	// show 2 tweeters
+	@media screen and (min-aspect-ratio: 8/7) {
+		&:nth-child(2){
+			display: flex;
+		}
+	}
+}
+
+.woofer {
+	// Hide all woofers by default
+	@include flex-center;
+	display: none;
+
+	// show 1 woofer
+	&:nth-child(1) {
+		display: flex;
+	}
+	// show 2 woofers
+	@media screen and (min-aspect-ratio: 8/7), (max-aspect-ratio: 16/32) {
+		&:nth-child(2){
+			display: flex;
+		}
+	}
+	// show 3 woofers
+	@media screen and (min-aspect-ratio: 13/7), (max-aspect-ratio: 10/32) {
+		&:nth-child(3){
+			display: flex;
+		}
+	}
+	// show 4 woofers
+	@media screen and (min-aspect-ratio: 16/7) {
+		&:nth-child(4){
+			display: flex;
+		}
+	}
+	// show 5 woofers
+	@media screen and (min-aspect-ratio: 22/7) {
+		&:nth-child(5){
+			display: flex;
+		}
+	}
+}
